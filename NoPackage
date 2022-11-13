@@ -1,0 +1,12 @@
+while true do
+	wait()
+	c=game.Workspace:getChildren()
+	for i = 1, #c do
+		cc=c[i]:getChildren()
+		for ii=1, #cc do
+			if cc[ii].className=="CharacterMesh" then
+				cc[ii]:Remove()
+			end
+		end
+	end
+end
